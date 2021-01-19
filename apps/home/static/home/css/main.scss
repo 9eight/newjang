@@ -1,0 +1,393 @@
+// Colors
+$blue: rgba(24, 24, 223, .9);
+$bg-sec: rgba(150, 220, 220, 1);
+$font-color: rgba(255, 232, 5, 1);
+$font-color-hover: rgba(240, 000, 025, .7);
+$darkblue: rgba(169, 219, 255, 0.9);
+$border-link: rgba(34, 11, 189, .8);
+$border: rgba(0, 0, 56, 1);
+$font2: rgba(10, 005, 005, .6);
+$sidebar: rgba(169, 219, 255, 0.9);
+$sidebar-second: rgba(170, 250, 255, 0.9);
+$sidebar-books: rgba(160, 230, 255, 0.8);
+$sidebar-latest: rgba(150, 210, 255, 0.6);
+$sidebar-best: rgba(140, 200, 255, 0.6);
+$sidebar-otd: rgba(130, 180, 255, 0.6);
+$sidebar-by-month: rgba(120, 160, 255, 0.6);
+$thirdcolor: rgba(64, 10, 152, 0.9);
+$navbar-link-hov: rgba(15, 255, 5, .9);
+$nav-btn: rgba(24, 24, 223, .9);
+$nav-btn-hover: rgba(115, 255, 5, .9);
+$tag-hover: rgba(115, 255, 160, .9);
+$top-border: rgba(109, 002, 210, .2);
+$bg-navabr:  rgba(20, 20, 50, .9);
+$bg-navabr:  #050f1a;
+$nav-link-border: rgba(250, 020, 025, .7);
+// Shadow
+$filter-col: rgba(100, 0, 202, 1);
+$shadow-nav: rgba(125, 41, 227, 0.7);
+// Fonts
+$primary-font: 'Rajdhani', sans-serif;
+$navbar-font: 'VT323', monospace;
+
+body {
+  background-color: $blue;
+  background: url("/static/home/img/header.jpg") no-repeat center center fixed;
+  background-size: cover;
+  font-family: $primary-font;
+  font-size: 18px;
+
+  a {
+    text-decoration: none !important;
+  }
+  
+  ul, li {
+    list-style: none;
+  }
+
+  .badge-light {
+    background-color: $border;
+    color: $tag-hover;
+    border-radius: 0px;
+    filter: drop-shadow(1px 5px 9px $tag-hover);
+  }
+  
+  .bg-dark {
+    background-color: $bg-sec !important;
+  }
+  
+  .bg-nav{
+    background-color: $bg-navabr !important;
+  }
+  
+  .borders{
+    // max-width: 1240px;
+    margin: 0 auto;
+  }
+  
+  .site-border{
+      height: 1px;
+      // width: 1240px;
+      background-color: $top-border;
+      margin-top: 2px;
+      padding: 2px;
+      border-radius: 50px;
+    }
+  
+  .blog-section{
+    font-family: $primary-font;
+    font-weight: 500;
+    // max-width: 1240px;
+    opacity: none;
+
+    .blog-post{
+      border: 1px solid $border;
+      box-shadow: 0px 10px 9px 10px rgba(16, 28, 202, .2);
+      
+
+      .blog-title {
+        font-size: 18px;
+      }
+      
+      .blog-date {
+        font-size: 11px;
+        border-bottom: 1px solid $thirdcolor;
+        padding: 3px;
+      }
+      
+      .blog-description {
+        // border-bottom: 1px solid $thirdcolor;
+        padding: 10px;
+      }
+      .post-share{
+          padding: 0 10px;
+          margin-bottom: 5px;
+
+        .share-icon::after {
+          content: '\f1e0';
+          font-family: "FontAwesome";
+          color: $blue;
+          font-size: 16px;
+          padding: 5px;
+
+          &:hover{
+            filter: drop-shadow(5px 5px 10px $border);
+          }
+        }
+
+        .share-btn{
+          font-size: 10px;
+          border: 1px solid $border;
+          color: $border;
+          padding: 2px 10px;
+          transition: all 300ms ease;
+          &:hover{
+            color: $thirdcolor;
+            filter: drop-shadow(0px 0px 1px $border);
+          }
+        }
+      }
+      .post-tags{
+        padding: 2px 10px;
+        font-size: 12px;
+      }
+      .post-tags > span::before{
+        content: '\f292';
+        font-family: "Font Awesome 5 Free";
+        transition: all 300ms ease;
+      }
+      .post-tags > span:hover{
+        color: $blue;
+      }
+      .post-bottom {
+        border-bottom: 1px solid #333;
+        margin-bottom: 100px;
+
+        .comment-view-like {
+          .comment-btn{
+            font-size: 12px;
+            color: $blue;
+          }
+          .comment-btn::after{
+            content: '\f075';
+            font-family: "Font Awesome 5 Free";
+            padding: 3px;
+          }
+          .view-count{
+            color: $blue;
+            font-size: 12px;
+            margin-right: 3px;
+          }
+          .view-count::after{
+            content: '\f06e';
+            font-family: "Font Awesome 5 Free";
+            padding: 3px;
+          }
+          .post-favorite{
+            color: $blue;
+            font-size: 16px;
+            margin-right: 10px;
+          }
+          .post-favorite::after {
+            content: '\f005';
+            font-family: "FontAwesome";
+          }
+          .cvl {
+            transition: all 300ms ease;
+          }
+          .cvl:hover{
+            color: $border;
+          }
+        }
+      }
+      
+    }
+      .cu-sidebar{
+        border: 2px solid $thirdcolor;
+        background-color: $sidebar;
+        box-shadow: 0px 10px 20px -14px rgba(0, 0, 0, 0.9);
+        color: $blue;
+        font-size: 14px;
+      }
+      aside{
+        .sidebar-social{
+          border: 1px solid $thirdcolor;
+          background-color: $sidebar-second;
+
+          .social-list {
+            color: #270049;
+            list-style: none;
+            padding: 0;
+            li a {
+              color: $border !important;
+            }
+
+           .twitter-btn::after{
+            content: '\f099';
+            font-family: "FontAwesome";
+            font-size: 20px;
+            }
+
+          .telegram-btn::after{
+            content: '\f2c6';
+            font-family: "Font Awesome 5 Free";
+            font-size: 20px;
+            }
+
+          .facebook-btn::after{
+            content: '\f082';
+            font-family: "FontAwesome";
+            font-size: 20px;
+            }
+
+          .linkedin-btn::after{
+            content: '\f08c';
+            font-size: 20px;
+            font-family: "FontAwesome";
+            }
+          .instagram-btn::after{
+            font-size: 20px;
+            content: '\f16d';
+            font-family: "FontAwesome";
+            }
+          .youtube-btn::after{
+            font-size: 20px;
+            content: '\f167';
+            font-family: "FontAwesome";
+            }
+          .gitlab-btn::after{
+            font-size: 20px;
+            content: '\f296';
+            font-family: "FontAwesome";
+            }
+          .github-btn::after{
+            font-size: 20px;
+            content: '\f09b';
+            font-family: "FontAwesome";
+            }
+          .bitcoin-btn::after{
+            font-size: 20px;
+            content: '\f15a';
+            font-family: "FontAwesome";
+            }
+          }
+          .social-list > li a {
+            transition: all 300ms ease;
+          }
+          .social-list > li:hover, .social-list > li a:hover{
+            color: $font-color-hover !important;
+            filter: drop-shadow(2px 5px 10px $shadow-nav);
+
+          }
+        }
+        .sidebar-social::after {
+          content: '\f0c1';
+          font-family: "FontAwesome";
+        }
+        .sidebar-otd{
+          background-color: $sidebar-otd;
+        }
+        .sidebar-books{
+          background-color: $sidebar-books;
+        }
+        .sidebar-books::after{
+          content: '\f02d';
+          font-family: "FontAwesome";
+
+        }
+        .sidebar-latest{
+          background-color: $sidebar-latest;
+          ul{
+            list-style: none;
+          }
+        }
+        .sidebar-latest::after{
+          content: '\f1da';
+          font-family: "FontAwesome";
+        }
+        .sidebar-in > ul li {
+          transition: all 300ms ease;
+        }
+        .sidebar-in > ul li:hover {
+          color: $border;
+        }
+        .sidebar-in > ul li::before {
+          content: '\f054';
+          margin-right: 10px;
+          font-family: "FontAwesome";
+        }
+        .sidebar-best{
+          background-color: $sidebar-best;
+        }
+        .sidebar-best::after{
+          content: '\f02e';
+          font-family: "FontAwesome";
+        }
+        .sidebar-by-month{
+          background-color: $sidebar-by-month;
+          ul li a {
+            color: $border;
+          }
+        }
+        .sidebar-by-month::after{
+          content: '\f073';
+          font-family: "FontAwesome";
+        }
+      }
+      .sidebar-in{
+        border: 2px solid $thirdcolor;
+        background-color: $sidebar-second;
+        box-shadow: 0px 10px 20px -14px rgba(0, 0, 0, 0.9);
+        color: $blue;
+        font-size: 14px;
+        
+        .sidebar-header{
+          color: $border;
+        }
+      }
+    
+  }
+  .top-navbar {
+    background-color: $blue;
+    height: 10px;
+  }
+  nav {
+    filter: drop-shadow(0px 10px 20px $shadow-nav);
+    background-color: red !important;
+    border-top: 3px solid $border;
+    font-family: $navbar-font;
+    // font-family: 'Press Start 2P', cursive;
+    border-bottom: 2px solid $border-link;
+    
+    .container {
+      justify-content: center;
+    }
+    .navbar-collapse {
+      flex-grow: 0;
+    
+      .navbar-nav{
+      
+        .nav-item {
+        
+          .nav-link {
+            padding: 0px 20px;
+            color: $font-color;
+            font-weight: bold;
+            border-top: 1px solid $nav-link-border;
+            font-size: 24px;
+            transition: all 200ms ease;
+          &:hover{
+            color: $navbar-link-hov;
+            // border-right: 1px solid $nav-link-border;
+            filter: drop-shadow(0px 0px 9px $nav-btn-hover);
+            }
+          }
+        }
+      }
+    }
+    .right-side{
+      .site-navbar-btn{
+        padding: 10px 30px;
+        color: $font-color;
+        font-weight: bold;
+        font-size: 21px;
+      }
+      .right-btn{
+        background-color: $nav-btn;
+        transition: all 500ms ease;
+        filter: drop-shadow(2px 2px 10px $filter-col);
+        &:hover{
+          background-color: $nav-btn-hover;
+          color: $font-color-hover;
+          filter: drop-shadow(2px 2px 20px $nav-btn-hover);
+        }
+      }
+      .site-login::after{
+        content: '\f4fb';
+        font-family: "Font Awesome 5 Free";
+        margin: 0 5px;
+      }
+    }
+    
+  }
+}

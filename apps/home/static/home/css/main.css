@@ -1,0 +1,316 @@
+@charset "UTF-8";
+body {
+  background-color: rgba(24, 24, 223, 0.9);
+  background: url("/static/home/img/header.jpg") no-repeat center center fixed;
+  background-size: cover;
+  font-family: "Rajdhani", sans-serif;
+  font-size: 18px;
+}
+body a {
+  text-decoration: none !important;
+}
+body ul, body li {
+  list-style: none;
+}
+body .badge-light {
+  background-color: #000038;
+  color: rgba(115, 255, 160, 0.9);
+  border-radius: 0px;
+  filter: drop-shadow(1px 5px 9px rgba(115, 255, 160, 0.9));
+}
+body .bg-dark {
+  background-color: #96dcdc !important;
+}
+body .bg-nav {
+  background-color: #050f1a !important;
+}
+body .borders {
+  margin: 0 auto;
+}
+body .site-border {
+  height: 1px;
+  background-color: rgba(109, 2, 210, 0.2);
+  margin-top: 2px;
+  padding: 2px;
+  border-radius: 50px;
+}
+body .blog-section {
+  font-family: "Rajdhani", sans-serif;
+  font-weight: 500;
+  opacity: none;
+}
+body .blog-section .blog-post {
+  border: 1px solid #000038;
+  box-shadow: 0px 10px 9px 10px rgba(16, 28, 202, 0.2);
+}
+body .blog-section .blog-post .blog-title {
+  font-size: 18px;
+}
+body .blog-section .blog-post .blog-date {
+  font-size: 11px;
+  border-bottom: 1px solid rgba(64, 10, 152, 0.9);
+  padding: 3px;
+}
+body .blog-section .blog-post .blog-description {
+  padding: 10px;
+}
+body .blog-section .blog-post .post-share {
+  padding: 0 10px;
+  margin-bottom: 5px;
+}
+body .blog-section .blog-post .post-share .share-icon::after {
+  content: "";
+  font-family: "FontAwesome";
+  color: rgba(24, 24, 223, 0.9);
+  font-size: 16px;
+  padding: 5px;
+}
+body .blog-section .blog-post .post-share .share-icon::after:hover {
+  filter: drop-shadow(5px 5px 10px #000038);
+}
+body .blog-section .blog-post .post-share .share-btn {
+  font-size: 10px;
+  border: 1px solid #000038;
+  color: #000038;
+  padding: 2px 10px;
+  transition: all 300ms ease;
+}
+body .blog-section .blog-post .post-share .share-btn:hover {
+  color: rgba(64, 10, 152, 0.9);
+  filter: drop-shadow(0px 0px 1px #000038);
+}
+body .blog-section .blog-post .post-tags {
+  padding: 2px 10px;
+  font-size: 12px;
+}
+body .blog-section .blog-post .post-tags > span::before {
+  content: "";
+  font-family: "Font Awesome 5 Free";
+  transition: all 300ms ease;
+}
+body .blog-section .blog-post .post-tags > span:hover {
+  color: rgba(24, 24, 223, 0.9);
+}
+body .blog-section .blog-post .post-bottom {
+  border-bottom: 1px solid #333;
+  margin-bottom: 100px;
+}
+body .blog-section .blog-post .post-bottom .comment-view-like .comment-btn {
+  font-size: 12px;
+  color: rgba(24, 24, 223, 0.9);
+}
+body .blog-section .blog-post .post-bottom .comment-view-like .comment-btn::after {
+  content: "";
+  font-family: "Font Awesome 5 Free";
+  padding: 3px;
+}
+body .blog-section .blog-post .post-bottom .comment-view-like .view-count {
+  color: rgba(24, 24, 223, 0.9);
+  font-size: 12px;
+  margin-right: 3px;
+}
+body .blog-section .blog-post .post-bottom .comment-view-like .view-count::after {
+  content: "";
+  font-family: "Font Awesome 5 Free";
+  padding: 3px;
+}
+body .blog-section .blog-post .post-bottom .comment-view-like .post-favorite {
+  color: rgba(24, 24, 223, 0.9);
+  font-size: 16px;
+  margin-right: 10px;
+}
+body .blog-section .blog-post .post-bottom .comment-view-like .post-favorite::after {
+  content: "";
+  font-family: "FontAwesome";
+}
+body .blog-section .blog-post .post-bottom .comment-view-like .cvl {
+  transition: all 300ms ease;
+}
+body .blog-section .blog-post .post-bottom .comment-view-like .cvl:hover {
+  color: #000038;
+}
+body .blog-section .cu-sidebar {
+  border: 2px solid rgba(64, 10, 152, 0.9);
+  background-color: rgba(169, 219, 255, 0.9);
+  box-shadow: 0px 10px 20px -14px rgba(0, 0, 0, 0.9);
+  color: rgba(24, 24, 223, 0.9);
+  font-size: 14px;
+}
+body .blog-section aside .sidebar-social {
+  border: 1px solid rgba(64, 10, 152, 0.9);
+  background-color: rgba(170, 250, 255, 0.9);
+}
+body .blog-section aside .sidebar-social .social-list {
+  color: #270049;
+  list-style: none;
+  padding: 0;
+}
+body .blog-section aside .sidebar-social .social-list li a {
+  color: #000038 !important;
+}
+body .blog-section aside .sidebar-social .social-list .twitter-btn::after {
+  content: "";
+  font-family: "FontAwesome";
+  font-size: 20px;
+}
+body .blog-section aside .sidebar-social .social-list .telegram-btn::after {
+  content: "";
+  font-family: "Font Awesome 5 Free";
+  font-size: 20px;
+}
+body .blog-section aside .sidebar-social .social-list .facebook-btn::after {
+  content: "";
+  font-family: "FontAwesome";
+  font-size: 20px;
+}
+body .blog-section aside .sidebar-social .social-list .linkedin-btn::after {
+  content: "";
+  font-size: 20px;
+  font-family: "FontAwesome";
+}
+body .blog-section aside .sidebar-social .social-list .instagram-btn::after {
+  font-size: 20px;
+  content: "";
+  font-family: "FontAwesome";
+}
+body .blog-section aside .sidebar-social .social-list .youtube-btn::after {
+  font-size: 20px;
+  content: "";
+  font-family: "FontAwesome";
+}
+body .blog-section aside .sidebar-social .social-list .gitlab-btn::after {
+  font-size: 20px;
+  content: "";
+  font-family: "FontAwesome";
+}
+body .blog-section aside .sidebar-social .social-list .github-btn::after {
+  font-size: 20px;
+  content: "";
+  font-family: "FontAwesome";
+}
+body .blog-section aside .sidebar-social .social-list .bitcoin-btn::after {
+  font-size: 20px;
+  content: "";
+  font-family: "FontAwesome";
+}
+body .blog-section aside .sidebar-social .social-list > li a {
+  transition: all 300ms ease;
+}
+body .blog-section aside .sidebar-social .social-list > li:hover, body .blog-section aside .sidebar-social .social-list > li a:hover {
+  color: rgba(240, 0, 25, 0.7) !important;
+  filter: drop-shadow(2px 5px 10px rgba(125, 41, 227, 0.7));
+}
+body .blog-section aside .sidebar-social::after {
+  content: "";
+  font-family: "FontAwesome";
+}
+body .blog-section aside .sidebar-otd {
+  background-color: rgba(130, 180, 255, 0.6);
+}
+body .blog-section aside .sidebar-books {
+  background-color: rgba(160, 230, 255, 0.8);
+}
+body .blog-section aside .sidebar-books::after {
+  content: "";
+  font-family: "FontAwesome";
+}
+body .blog-section aside .sidebar-latest {
+  background-color: rgba(150, 210, 255, 0.6);
+}
+body .blog-section aside .sidebar-latest ul {
+  list-style: none;
+}
+body .blog-section aside .sidebar-latest::after {
+  content: "";
+  font-family: "FontAwesome";
+}
+body .blog-section aside .sidebar-in > ul li {
+  transition: all 300ms ease;
+}
+body .blog-section aside .sidebar-in > ul li:hover {
+  color: #000038;
+}
+body .blog-section aside .sidebar-in > ul li::before {
+  content: "";
+  margin-right: 10px;
+  font-family: "FontAwesome";
+}
+body .blog-section aside .sidebar-best {
+  background-color: rgba(140, 200, 255, 0.6);
+}
+body .blog-section aside .sidebar-best::after {
+  content: "";
+  font-family: "FontAwesome";
+}
+body .blog-section aside .sidebar-by-month {
+  background-color: rgba(120, 160, 255, 0.6);
+}
+body .blog-section aside .sidebar-by-month ul li a {
+  color: #000038;
+}
+body .blog-section aside .sidebar-by-month::after {
+  content: "";
+  font-family: "FontAwesome";
+}
+body .blog-section .sidebar-in {
+  border: 2px solid rgba(64, 10, 152, 0.9);
+  background-color: rgba(170, 250, 255, 0.9);
+  box-shadow: 0px 10px 20px -14px rgba(0, 0, 0, 0.9);
+  color: rgba(24, 24, 223, 0.9);
+  font-size: 14px;
+}
+body .blog-section .sidebar-in .sidebar-header {
+  color: #000038;
+}
+body .top-navbar {
+  background-color: rgba(24, 24, 223, 0.9);
+  height: 10px;
+}
+body nav {
+  filter: drop-shadow(0px 10px 20px rgba(125, 41, 227, 0.7));
+  background-color: red !important;
+  border-top: 3px solid #000038;
+  font-family: "VT323", monospace;
+  border-bottom: 2px solid rgba(34, 11, 189, 0.8);
+}
+body nav .container {
+  justify-content: center;
+}
+body nav .navbar-collapse {
+  flex-grow: 0;
+}
+body nav .navbar-collapse .navbar-nav .nav-item .nav-link {
+  padding: 0px 20px;
+  color: #ffe805;
+  font-weight: bold;
+  border-top: 1px solid rgba(250, 20, 25, 0.7);
+  font-size: 24px;
+  transition: all 200ms ease;
+}
+body nav .navbar-collapse .navbar-nav .nav-item .nav-link:hover {
+  color: rgba(15, 255, 5, 0.9);
+  filter: drop-shadow(0px 0px 9px rgba(115, 255, 5, 0.9));
+}
+body nav .right-side .site-navbar-btn {
+  padding: 10px 30px;
+  color: #ffe805;
+  font-weight: bold;
+  font-size: 21px;
+}
+body nav .right-side .right-btn {
+  background-color: rgba(24, 24, 223, 0.9);
+  transition: all 500ms ease;
+  filter: drop-shadow(2px 2px 10px #6400ca);
+}
+body nav .right-side .right-btn:hover {
+  background-color: rgba(115, 255, 5, 0.9);
+  color: rgba(240, 0, 25, 0.7);
+  filter: drop-shadow(2px 2px 20px rgba(115, 255, 5, 0.9));
+}
+body nav .right-side .site-login::after {
+  content: "";
+  font-family: "Font Awesome 5 Free";
+  margin: 0 5px;
+}
+
+/*# sourceMappingURL=main.css.map */

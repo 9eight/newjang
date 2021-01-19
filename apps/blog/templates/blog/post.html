@@ -1,0 +1,55 @@
+{% extends 'layout.html' %}
+{% block body %}
+<div class="container blog-section">
+  
+  <div class="row">
+    <div class="col-md-9 col-xs-11 bg-dark blog-post p-5">
+      <section>
+        <article class="blog-content">
+          <span class="post-category">Article</span>
+          <p class="blog-title">{{ blog.title }}</p>
+          <span class="blog-date">{{ blog.pub_date }}</span>
+          <p class="blog-description mt-4">
+          {{ blog.description | safe }}
+          </p>
+          <div class="post-share">
+            <span class="share-icon">Share</span>
+            <br>
+            <a class="share-btn" href="">Twitter</a>
+            <a class="share-btn" href="">FaceBook</a>
+            <a class="share-btn" href="">Telegram</a>
+            <a class="share-btn" href="">Instagram</a>
+            <a class="share-btn" href="">Whatsapp</a>
+          </div>
+          <div class="d-flex justify-content-between align-items-center post-bottom">
+            <div class="post-tags">
+              <span class="badge badge-pill badge-light">Technology</span>
+              <span class="badge badge-pill badge-light">Sport</span>
+              <span class="badge badge-pill badge-light">Football</span>
+              <span class="badge badge-pill badge-light">Juventus</span>
+              <span class="badge badge-pill badge-light">Italy</span>
+            </div>
+            <div class="comment-view-like">
+              <span class="post-favorite"></span>
+              <span class="cvl view-count">views</span>
+              <a class="cvl comment-btn" href="">Comments</a>
+            </div>
+          </div>
+        </article>
+    </div>
+      <aside class="col-md-3 col-xs-6 p-4  cu-sidebar">
+
+        {% include 'home/sections/sidebar_social.html' %} 
+        {% include 'home/sections/sidebar_books.html' %} 
+        {% include 'home/sections/sidebar_latest.html' %} 
+        {% include 'home/sections/sidebar_otd.html' %} 
+        {% include 'home/sections/sidebar_best.html' %} 
+        {% include 'home/sections/sidebar_by_month.html' %} 
+      
+      </aside>
+    </section>
+  </div>
+</div>
+
+
+{% endblock %}
